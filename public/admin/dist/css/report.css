@@ -1,0 +1,461 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font: 12pt "";
+    direction: rtl;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'ALMARAI';
+    src: url(../fonts/ARBFONTS-ALMARAI-LIGHT.TTF);
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'ALMARAI';
+}
+
+.book {
+    position: relative;
+}
+
+.subpage {
+    background-image: url('../img/kayan bg report.png');
+    background-size: cover;
+    position: relative;
+}
+
+.header-div {
+    position: relative;
+}
+
+.header-div .right h4 {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    text-align: left;
+}
+
+.header-div .left h4 {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    text-align: left;
+    direction: ltr;
+}
+
+.header-div .center h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.page {
+    width: 21.7cm;
+    min-height: 29cm;
+    padding: 1cm;
+    margin: 1cm auto;
+    border: 2px #d3d3d3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.subpage {
+    padding: 0.1cm;
+    border: 1px black solid;
+    height: 27cm;
+    outline: 1cm #fff solid;
+    position: relative;
+}
+
+.row .header-center p {
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.row .header-center .image span {
+    display: block;
+    margin-right: 170px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.row .header-right {
+    width: 400px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.row .header-right h2 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contain .data thead tr th {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #777;
+    background: #41abea;
+    text-transform: capitalize;
+    color: rgb(250 250 250);
+    letter-spacing: 2px;
+}
+
+.contain .data tbody tr td {
+    font-family: 'ALMARAI';
+    text-align: left;
+}
+
+.row .header-center .image img {
+    width: 200px;
+    height: 130px;
+    margin-top: 50px;
+    float: left;
+}
+
+.row h2 {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: normal;
+}
+
+.contain .data thead .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* .col {
+    flex: 1 0 0%;
+} */
+
+.first-row {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.first-row p {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+/* pagination */
+
+nav {
+    display: flex;
+    width: 21.7cm;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.pagination {
+    background-color: #7883a3;
+    list-style: none;
+    display: flex;
+}
+
+.pagination .page-item {
+    padding: 10px;
+}
+
+.page-item {
+    margin: 10px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.print {
+    font-size: 20px;
+    padding: 10px 35px;
+    background: red;
+}
+
+
+/*start header*/
+
+.header-right p {
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-center img {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    margin-right: 116px;
+}
+
+.header-left p {
+    font-size: 14.5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.th {
+    background-color: rgba(24, 24, 24, 0.273);
+    ;
+    background: rgb(65, 171, 234, 0.273);
+    font-weight: 700;
+}
+
+.sub-header {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.sub-header p {
+    margin: auto 50px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/*end header*/
+
+
+/*start contan*/
+
+.contain {
+    /* height: 216mm; */
+    margin-top: 200px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border: 1.2px solid hsl(0deg 0% 61%);
+}
+
+td {
+    /* font-weight: bold; */
+    padding: 2px;
+    font-size: 17px;
+    padding: 8px 12px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+table.data {
+    width: 95%;
+    margin: 9px auto 0;
+}
+
+.title {
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 15px;
+    width: 262px;
+    font-size: 17px;
+    color: white;
+    border-radius: 11px;
+    background-color: #7883a3;
+    padding: 6px;
+    text-align: center;
+}
+
+
+/* .footer {
+    border-top: 2px solid black;
+} */
+
+.footer-right p {
+    font-size: 14.5px;
+    text-align: right;
+    width: 130%;
+}
+
+.footer-right {
+    margin-left: 0cm;
+}
+
+.footer-right span {
+    font-weight: bold;
+}
+
+.footer-left {
+    width: -10cm !important;
+    width: 2cm;
+}
+
+.footer-left p {
+    font-size: 14px;
+    text-align: left;
+    width: 40%;
+    background: gray;
+    float: left;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: #d5d5ef;
+    text-align: right;
+}
+
+table thead td {
+    font-size: 17px;
+}
+
+
+/* footer */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #41abea;
+    color: #000;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row-reverse;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+    direction: ltr;
+}
+
+.footer-number {
+    display: flex;
+    flex-direction: row-reverse;
+    /* width: 27%; */
+}
+
+.footer img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+.footer-number img {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer-location {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 15px;
+    border-radius: 0 0 40px 40px;
+    flex-direction: row-reverse;
+}
+
+
+/*start table info*/
+
+table.info {
+    width: 100%;
+}
+
+.info thead {
+    background-color: #bcd8ef;
+    /* color: #00009d; */
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@page {
+    size: landscape;
+    margin: 0;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    @font-face {
+        font-family: 'ALMARAI';
+        src: url(../fonts/ARBFONTS-ALMARAI-LIGHT.TTF);
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        font-family: 'ALMARAI';
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .pagination,
+    .print {
+        display: none;
+    }
+}
